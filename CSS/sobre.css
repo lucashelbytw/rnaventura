@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+	
+}
+p{
+	text-align: justify;
+	margin: 25px;
+}
+.divpai{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 25px auto;
+	width: 70%;
+	background-color: #e0f2ff;
+	border-radius: 16px;
+}
+
+li {
+	text-align: justify;
+	
+}
+h3{
+	text-align: center;
+}

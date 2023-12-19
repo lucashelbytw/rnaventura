@@ -1,0 +1,256 @@
+<!-- <?php
+// Iniciar a sessão
+session_start();
+
+// Armazenar dados do PHP em variáveis
+$carrinho = json_encode($_SESSION['carrinho']);
+$total = json_encode($_SESSION['total']);
+?> -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="icon" href="/img/logo.jpeg">
+	<link rel="stylesheet" href="CSS/repasseio.css">
+	<link rel="stylesheet" href="css/cabecalho.css">
+	<link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/passeio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<!-- PARTE DE LUCAS IAGO -->
+	<nav>
+		<a href="index.html">Aventura RN</a>
+		<label for="toggler">
+			<i class="fa fa-bars"></i>
+		</label>
+		<input type="checkbox" id="toggler" name="">
+		<div class="menu">
+			<ul class="list">
+				<li><a class="botao" href="index.html">Pagina Principal</a></li>
+				<li><a class="botao" href="passeio.html">Passeios</a></li>
+				<li><a class="botao" href="sobre.html">Sobre</a></li>
+				<li><a class="botao" href="barralogin.html">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- YALINE ########################################### -->
+
+
+	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="IMG/genipabu-rn-1.png" class="d-block w-100" alt="Genipabu">
+		  </div>
+		  <div class="carousel-item">
+			<img src="IMG/Praia-do-amor tibau.jpg" class="d-block w-100" alt="Tibau">
+		  </div>
+		  <div class="carousel-item">
+			<img src="IMG/ponta negra.jpeg" class="d-block w-100" alt="Ponta Negra">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+
+	<header>
+		<!-- <h2>Página Inicial</h2> -->
+		<main>
+			<p> Bem vindo ao Aventura RN! Embarque conosco em uma jornada de descoberta pelo espetacular litoral do Rio
+				Grande do Norte. O Aventura RN é a sua porta de entrada para aventuras únicas e momentos memoráveis à
+				beira-mar. Deixe-nos guiá-lo pelas belezas naturais e culturais deste paraíso potiguar.</p>
+		</main>
+		<section id="passeios">
+			<h2>Passeios</h2>
+			<p>Explore uma variedade de passeios emocionantes e experiências únicas oferecidas pelo Aventura RN.</p>
+			<p>Nossos guias especializados irão acompanhá-lo em jornadas seguras e informativas, proporcionando insights
+				sobre a rica história, a fauna e flora do litoral potiguar. Venha fazer parte desta jornada conosco!</p>
+
+
+			<section id="produtos">
+				<!-- Linha 1 -->
+				<div class="produto">
+					<img src="IMG/galinhos.jpeg" alt="Praia de Galinhos">
+					<h2> Galinhos</h2>
+
+				</div>
+
+				<div class="produto">
+					<img src="IMG/genipabu-rn-1.png" alt="Praia de Genipabu">
+					<h2>praia de Genipabu</h2>
+				</div>
+				<!-- Linha 2 -->
+				<div class="produto">
+					<img src="IMG/maracajau.jpeg" alt="Praia de Maracajaú">
+					<h2>Praia de Maracajaú</h2>
+				</div>
+
+				<div class="produto">
+					<img src="IMG/pipa.jpeg" alt="Praia de Pipa">
+					<h2>Praia de Pipa</h2>
+				</div>
+
+			</section>
+
+			<section id="produtos">
+				<!-- Linha 1 -->
+				<div class="produto">
+					<img src="IMG/ponta negra.jpeg" alt="Praia de Ponta Negra">
+					<h2>Praia de Ponta Negra</h2>
+				</div>
+
+				<div class="produto">
+					<img src="IMG/pra sagi baia.jpg" alt="Praia sagi baia">
+					<h2>Praia sagi baia</h2>
+				</div>
+				<!-- Linha 2 -->
+				<div class="produto">
+					<img src="IMG/praia do s cristo s miguel.png" alt="Praia Ponta do Santo Cristo">
+					<h2>Praia Ponta do Santo Cristo</h2>
+				</div>
+
+				<div class="produto">
+					<img src="IMG/Praia-do-amor tibau.jpg" alt="Praia do amor tibau do Sul">
+					<h2>Praia do amor tibau do Sul</h2>
+				</div>
+
+			</section>
+
+		</section>
+
+	</header>
+
+	<!--  LUCAS IAGO///////////////////////////////////////////////////////////////////// -->
+	<div class="caixa" style="padding:34px;">
+		<h2 class="display-4 text-cente mb-4"><strong>Agenda passeio</strong></h2>
+		<form class="row g-3 needs-validation" novalidate action="PHP/conexao2.php" method="post">
+			<div class="col-md-4">
+			  <label for="validationCustom01" class="form-label">Nome Completo</label>
+			  <input type="text" class="form-control" id="validationCustom01" value="Mark" required name="nome-completo">
+			  <div class="valid-feedback">
+				Parece bom!
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <label for="validationCustom02" class="form-label">Número de pessoas</label>
+			  <input type="text" class="form-control" id="validationCustom02" value="Otto" required name="numero">
+			  <div class="valid-feedback">
+				Parece bom!
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <label for="validationCustom02" class="form-label">Data de check in</label>
+			  <input type="date" class="form-control" id="validationCustom02" value="" required name="data">
+			  <div class="valid-feedback">
+				Parece bom!
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <label for="validationCustom04" class="form-label">Destino</label>
+			  <select class="form-select" id="validationCustom04" required name="destino">
+				<option selected disabled value="">Escolha...</option>
+				<option value="Galinhos">Galinhos</option>
+				<option value="Praia de Genipabu">Praia de Genipabu</option>
+				<option value="Praia de Maracajú">Praia de Maracajaú</option>
+				<option value="Praia de Pipa">Praia de Pipa</option>
+				<option value="Praia de Ponta Negra">Praia de Ponta Negra</option>
+				<option value="Praia sagi baia">Praia sagi baía</option>
+				<option value="Praia Ponta do Santo Cristo">Praia Ponta do Santo Cristo</option>
+				<option value="Praia do amor tibau do Sul">Praia do amor</option>
+			  </select>
+			  <div class="invalid-feedback">
+				Por favor, selecione um estado válido.
+			  </div>
+			</div>
+			<div class="col-12">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+				<label class="form-check-label" for="invalidCheck">
+				  Concordo com os termos e condições
+				</label>
+				<div class="invalid-feedback">
+				  Você deve concordar antes de enviar.
+				</div>
+			  </div>
+			</div>
+			<div class="col-12">
+			  <button class="btn btn-primary" type="submit">Agenda passeio</button>
+			</div>
+		  </form>
+		</div>
+	
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<h3>Aventura<span>RN</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Pagina Inicial</a>
+				|
+				<a href="#">Sobre</a>
+				|
+				<a href="#">Contato</a>
+				|
+				<a href="#">Blog</a>
+			</p>
+
+			<p class="footer-company-name">AventuraRN © 2023 <strong>SagarDeveloper</strong> All rights reserved</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>Natal</span>
+					RN</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>84 3663-3663</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:sagar00001.co@gmail.com">Aventurarn@gmail.com</a></p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>Sobre AventuraRN</span>
+				<strong>Sagar Developer</strong> Viagem em todo o RN.
+			</p>
+			<div class="footer-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</footer>
+	<script src="JS/script.js"></script>
+	<script src="JS/confirmacao.js"></script>
+	<script src="JS/navbar.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+
+
+.header img{
+    width: 100%;
+    position: center;
+  
+  }
+  
+  .header1 {
+    padding: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  .img {
+    text-align: center; /* Centraliza horizontalmente */
+    display: flex; /* Permite alinhar verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .img img {
+    max-width: 100%;
+    height: auto; /* Para manter a proporção da imagem */
+  }
+  
+  
+  /* Oganizando o site  */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Michroma', sans-serif;
+    padding: 10px;
+    background-color: #B08E6B;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: left;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .aberto{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  
+  
+  .topnav a:hover {
+    background-color: #ab4255;
+    color: white;
+  }
+  
+  /*Coluna esquerda*/
+  
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  .leftcolumn2 {
+    float: left;
+    width: 10%;
+    display: fixed;
+  }
+  
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /*rightcolumn*/
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  .rightcolumn2 {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    text-align: justify;
+    padding-bottom: 50px;
+  }
+  
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+    border: #fff 5px;
+    display: flex;
+  }
+  
+  /*Adicionar o card efeitos nos artigos*/
+  
+  .card {
+    background-color: #28a4ab;
+    padding: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+  
+  /*Limpar floats depois das colunas*/
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Colocar o código no CSS abaixo do .footer para transformar as telas em um layout responsivo| */
+  
+  /* Transformando em um Layout responsivo - telas medias */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+        }
+    }
+  
+    /*transformando o conteúdo en um Layout responsivo - tela menores*/
+  
+    @media screen and (max-width: 400px) {
+        .topnv a{
+            float: none;
+            width: 100%;
+        }
+    }
+  
+    .search-container {
+        display: flex;
+        align-items: center;
+      }
+  
+      .search-container input {
+        padding: 5px 10px;
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        width: 100%;
+      }
+  
+      button .pesquisa{
+          width: 5px;
+          height: 5px;
+      }
+  
+      .search-container::placeholder{
+          color: #aaa;
+      }
+  
+      .search-container button {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+  
+      .pesquisa{
+          background-color: transparent;
+          width: "20%";
+      }
+  
+      .nav-menu{
+      list-style:none;
+      float:left;
+      }
+  
+      .nav-menu li{
+        position:flex;
+        float:left;
+        border-right:1px solid #c0c0c0;
+        list-style-type: none;
+        }
+  
+      .nav-menu li a{
+        float: none;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: #3C3744;
+        }
+  
+        .nav-menu li a:hover {
+          background-color: #ddd;
+          color: black;
+          box-shadow: 0 3px 10px 0 #CCC;
+          -webkit-box-shadow: 0 3px 10px 0 #CCC;
+          -moz-box-shadow: 0 3px 10px 0 #CCC;
+          text-shadow: 0px 0px 5px #fff;
+      }
+      
+  
+      .nav-menu li  ul {
+        position:absolute;
+        top:25px;
+        left:0;
+        display:none;
+        }
+  
+      .nav-menu li:hover ul, .menu li.over ul{
+          display:block;
+        }
+  
+      .nav-menu li ul li{
+        display:block;
+        width:150px;
+        }
+  
+  
+  
+      .nav-menu{
+      list-style-type:none;
+      float:left;
+      }
+  
+      .action-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      .mundinho{
+          align-items: right;
+          margin-left: 50%;
+      }
+  
+    h1 .geek{
+        margin-right: 50%;
+    }
+  
+    .card img{
+        width:100%;
+        border: #fff 10px;
+    }
+  
+    .place{
+        background-color: #E8C39E;
+        /*border: ;*/
+        margin: 20px;
+        padding: 10px;
+        color: white;
+    }
+  
+    .place h1{
+        color: white;
+        margin-top: 10%;
+        font-size: 400%;
+    }
+  
+    .place img{
+        float: right;
+        margin: 10px 10px 0 0;
+        padding: 50px;
+        top: 80px;
+        width: 95%;
+        position: center;
+    }
+  
+    .clear{
+        clear: both;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .menu {
+        margin: 0;
+        padding: 0;
+    }
+  
+    .wrapper {
+        position: relative;
+    }
+  
+    .search-container {
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+  
+  .carousel-container {
+      overflow: hidden;
+      width: 300px;
+  }
+  
+  .carousel-wrapper {
+      display: flex;
+      transition: all 0.3s;
+  }
+  
+  .carousel-item {
+      min-width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+  }
+  
+  /* ... seu CSS anterior ... */
+  
+  .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1;
+  }
+  
+  .carousel-arrow-left {
+      left: 0;
+  }
+  
+  .carousel-arrow-right {
+      right: 0;
+  }
+  
+  /* Reset básico */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+      margin-bottom: 20px;
+  }
+  
+  #produtos .produto {
+    background: linear-gradient(#72f1f3, #43b0df);
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 300px;
+  }
+  
+  #produtos .produto img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+  }
+  
+  #produtos .produto h2 {
+      font-size: 18px;
+      margin: 15px 0;
+      text-align: center;
+    color: white;
+  }
+  
+  #produtos .produto p {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    color: #fffdfd;
+  }
+  
+  #produtos .produto button {
+      background-color:  #383da4;
+      color: #f2f2f2;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+  
+  #produtos .produto button:hover {
+      background-color: #98abc6;
+      color: white;
+  }
+  
+  #carrinho {
+      margin: 20px;
+      background: linear-gradient(#72f1f3);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #carrinho h2 {
+      border-bottom: 1px solid #d3d3d3;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+  }
+  
+  #carrinho ul {
+      list-style-type: none;
+      margin-bottom: 20px;
+  }
+  
+  #carrinho button {
+      background-color: #aa7444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      margin: 10px;
+  }
+  
+  #carrinho button:hover {
+      background-color: #a8905d;;
+      color: white;
+  }
+  
+  #produtos {
+  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Espaçamento igual entre os produtos */
+      gap: 20px; /* Espaço entre produtos */
+  }
+  
+  .produto {
+      flex: 1 1 calc(50% - 10px); /* O produto ocupará 50% do espaço disponível, subtraindo o espaço do gap */
+      max-width: calc(50% - 10px); /* Define a largura máxima para o produto */
+      box-sizing: border-box; /* Isso garante que o padding não aumente o tamanho do produto */
+      /* O restante do estilo do produto permanece o mesmo */
+  }
+ 
+  

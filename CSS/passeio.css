@@ -1,0 +1,98 @@
+body {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    
+}
+/* Estilo para a imagem em tela inteira */
+body{
+     /* Fixa a imagem na tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Define a largura como 100% para cobrir toda a largura da tela */
+    height: 100%; /* Define a altura como 100% para cobrir toda a altura da tela */
+    background-image: url('img/ystallonne-alves-7VWcujLDF2o-unsplash.jpg'); /* Substitua 'caminho-para-sua-imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Impede que a imagem seja repetida */
+    background-position: center center; /* Centraliza a imagem */
+}
+
+p {
+    text-align: justify;
+    margin: 76px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 950px; /* Alterado de 'width' para 'max-width' */
+    padding: 0 20px; /* Adicionado espaçamento interno */
+    box-sizing: border-box; /* Para incluir padding no cálculo do tamanho */
+}
+
+.place {
+    background-color: #fff;
+    border-color: #ccc #999 #ccc;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  
+}
+
+.place h2 {
+    border-bottom: 1px dashed #7e9f19;
+    margin: 0;
+}
+
+.place a {
+    color: rgb(138, 127, 25); /* Removido espaço após 'rgb' */
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.place img {
+    border: 1px solid #7e9f19;
+    max-width: 100%; /* Para impedir que as imagens ultrapassem o contêiner */
+    margin: 10px 0; /* Alterado o espaçamento vertical */
+    padding: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Adicionando uma media query para tornar o CSS responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reduzindo o espaçamento interno para telas menores */
+    }
+
+    .place {
+        margin-bottom: 10px; /* Reduzindo a margem inferior para telas menores */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+
+    .place img {
+        float: none; /* Removendo o flutuador para que as imagens ocupem a largura total */
+        margin: 10px auto; /* Centralizando as imagens horizontalmente */
+        display: block; /* Removendo a margem superior em telas menores */
+    }
+}
+h2{
+    text-align: center;
+   color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  

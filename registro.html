@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet" href="css/registro.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Cadastro</div>
+    <div class="content">
+      <form action="PHP/registra.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome Completo</span>
+            <input type="text" placeholder="Nome completo" name="nome-completo" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Usuario</span>
+            <input type="text" placeholder="Digite seu Usuario" name="usuario" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Digite seu  email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Digite seu numero</span>
+            <input type="text" placeholder="Digite seu numero" name="numero" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Cria Senha</span>
+            <input type="password" placeholder=" Cria Senha" name="cria-senha" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirme a senha</span>
+            <input type="text" placeholder="Confirme a senha" name="confirma-senha" required>
+          </div>
+          <!-- ///////////////////////////////////////////////////// -->
+          <div class="input-box">
+            <span class="details">CEP</span>
+            <input type="text" placeholder="Confirme a senha" name="cep" required id="cep">
+          </div>
+          <div class="input-box">
+            <span class="details">RUA</span>
+            <input type="text" placeholder="Confirme a senha" name="logradouro" required id="logradouro">
+          </div>
+          <div class="input-box">
+            <span class="details">BAIRRO</span>
+            <input type="text" placeholder="Confirme a senha" name="bairro" required id="bairro">
+          </div>
+          <div class="input-box">
+            <span class="details">CIDADE</span>
+            <input type="text" placeholder="Confirme a senha" name="localidade" required id="localidade">
+          </div>
+          <div class="input-box">
+            <span class="details">ESTADO</span>
+            <input type="text" placeholder="Confirme a senha" name="uf" required id="uf">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">genêro</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Masculino</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Feminino</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefero não informar</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="JS/cep.js"></script>
+</body>
+</html>
